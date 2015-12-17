@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lyrics Finder</title>
+	<link rel="stylesheet" type="text/css" href="css/onsenui/css/onsenui.css">
+	<link rel="stylesheet" type="text/css" href="css/onsenui/css/onsen-css-components.css">	
+	<link rel="stylesheet" type="text/css" href="css/onsenui/css/onsen-css-components-default.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="http://localhost/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div id="header"><div id="title">Lyrics Finder</div></div>
+<div id="form-finder">
+	<form id="form-search-lyrics" method="post" name="form-search-lyrics">
+	<div><input type="text" class="text-input text-input--underbar" name="url" id="searchbar" placeholder="Search Bar"></div>
+	<div><button type="button" id="btn-search" class="button button--large">Search</button></div>
+	</form>
+</div>
+<div id="alertBox">
+<div class="alert-dialog-mask"></div>
+
+<div class="alert-dialog">
+  <div class="alert-dialog-content" id="result-box">
+  </div>
+
+  <div class="alert-dialog-footer">
+    <button class="alert-dialog-button
+      alert-dialog-button--primal" id="confirm-button">OK</button>
+  </div>
+</div>
+</div>
+<div id="loadingBox">
+<div class="alert-dialog-mask"></div>
+
+<div class="alert-dialog">
+  <div class="alert-dialog-content">
+    Loading.....
+  </div>
+</div>
+</div>
+<div id="result">
+	<div id="title-artist" class="property-artist"></div>
+	<div id="snippet-lirik" class="property-artist"></div>
+	<div class="property-artist"><button type="button" class="button button--outline" id="goto-link">Goto Link</button></div>
+</div>
+
+<div class="tab-bar">
+  
+  <label class="tab-bar__item">
+    <input type="radio" name="tab-bar-b">
+    <button class="tab-bar__button" id="btn-exit">
+      Exit
+    </button>
+  </label>
+</div>
+
+</body>
+</html>
